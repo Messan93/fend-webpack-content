@@ -10,7 +10,7 @@ const mockAPIResponse = require('./mockAPI.js')
 var textapi = new AYLIENTextAPI({
     application_id: process.env.API_ID,
     application_key: process.env.API_KEY
-  });
+});
 
 const app = express()
 
@@ -44,3 +44,6 @@ app.listen(8081, function () {
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
 })
+
+// setup for the Api work
+

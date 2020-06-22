@@ -11,6 +11,8 @@ function handleSubmit(event) {
     .then(function(res) {
         document.getElementById('results').innerHTML = res.message
     })
+
+
 }
 
 export { handleSubmit }
